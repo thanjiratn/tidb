@@ -38,16 +38,16 @@ data:
   storageClassMap: |
     ssd-storage:
       hostDir: /var/lib/docker/ssd
-      mountDir: /mnt/ssd
+      mountDir: /var/lib/docker/ssd
     shared-ssd-storage:
       hostDir: /var/lib/docker/sharedssd
-      mountDir: /mnt/sharedssd
+      mountDir: /var/lib/docker/sharedssd
     monitoring-storage:
       hostDir: /var/lib/docker/monitoring
-      mountDir: /mnt/monitoring
+      mountDir: /var/lib/docker/monitoring
     backup-storage:
       hostDir: /var/lib/docker/backup
-      mountDir: /mnt/backup
+      mountDir: /var/lib/docker/backup
 ---
 apiVersion: apps/v1
 kind: DaemonSet
