@@ -223,7 +223,7 @@ spec:
     # priorityClassName: system-cluster-critical
     # schedulerName: default-scheduler
     nodeSelector:
-        cce.cloud.com/cce-nodepool: hwc-sit0-rnp-cce-pd-nodep
+        nodepool: tipd
     # annotations:
     #   node.kubernetes.io/instance-type: some-vm-type
     # tolerations:
@@ -415,7 +415,7 @@ spec:
     # priorityClassName: system-cluster-critical
     # schedulerName: default-scheduler
     nodeSelector:
-       cce.cloud.com/cce-nodepool: hwc-sit0-rnp-cce-tidb-nodep
+       nodepool: tidb
     # annotations:
     #   node.kubernetes.io/instance-type: some-vm-type
     # tolerations:
@@ -631,7 +631,7 @@ spec:
     # priorityClassName: system-cluster-critical
     # schedulerName: default-scheduler
     nodeSelector:
-       cce.cloud.com/cce-nodepool: hwc-sit0-rnp-cce-tikv-nodep
+       nodepool: tikv
    
     # annotations:
     #   node.kubernetes.io/instance-type: some-vm-type
