@@ -10,5 +10,3 @@ spec:
   - ReadWriteOnce
   hostPath:
     path: "/var/lib/docker"
-  nodeSelector:
-    nodepool: tikv
