@@ -18,7 +18,7 @@ spec:
           operator: In
           values:
           - tikv
---                    
+---                  
 kind: PersistentVolume
 apiVersion: v1
 metadata:
@@ -39,7 +39,7 @@ spec:
           operator: In
           values:
           - tipd
---
+---
 kind: PersistentVolume
 apiVersion: v1
 metadata:
@@ -60,7 +60,7 @@ spec:
           operator: In
           values:
           - tidb
---
+---
 kind: PersistentVolume
 apiVersion: v1
 metadata:
