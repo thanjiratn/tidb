@@ -14,7 +14,7 @@ spec:
     required:
       nodeSelectorTerms:
       - matchExpressions:
-        - nodepool: tikv
+        - key: kubernetes.io/hostname
           operator: In
           values:
-          - ssd
+          - tikv
