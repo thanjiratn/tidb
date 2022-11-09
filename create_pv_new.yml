@@ -1,0 +1,83 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv-ssd-storage-0
+spec:
+  storageClassName: ssd-storage
+  capacity:
+    storage: 400Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/docker/ssd"
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: nodepool
+          operator: In
+          values:
+          - tikv
+--                    
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: shared-ssd-storage-0
+spec:
+  storageClassName: shared-ssd-storage
+  capacity:
+    storage: 140Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/docker/sharedssd"
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: nodepool
+          operator: In
+          values:
+          - tipd
+--
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: backup-storage-0
+spec:
+  storageClassName: backup-storage
+  capacity:
+    storage: 30Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/docker/backup"
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: nodepool
+          operator: In
+          values:
+          - tidb
+--
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: monitoring-storage-0
+spec:
+  storageClassName: monitoring-storage
+  capacity:
+    storage: 20Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/docker/monitoring"
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: nodepool
+          operator: In
+          values:
+          - tidb
