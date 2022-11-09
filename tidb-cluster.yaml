@@ -306,10 +306,10 @@ spec:
     #   # mount path of the PVC
     #   mountPath: /some/path
     
-    storageVolumes:
-    - name: pddata
-      storageSize: "140Gi"
-      mountPath: "/var/lib/docker/sharedssd"
+    #storageVolumes:
+    #- name: pddata
+    #  storageSize: "140Gi"
+    #  mountPath: "/var/lib/docker/sharedssd"
       
     ## Subdirectory within the volume to store PD Data. By default, the data
     ## is stored in the root directory of volume which is mounted at
@@ -533,10 +533,10 @@ spec:
     #   # mount path of the PVC
     #   mountPath: /some/path
     
-    storageVolumes:
-    - name: dbdata
-      storageSize: "70Gi"
-      mountPath: "/var/lib/docker/backup"
+    #storageVolumes:
+    #- name: dbdata
+    #  storageSize: "70Gi"
+    #  mountPath: "/var/lib/docker/backup"
        
 
 
@@ -748,10 +748,10 @@ spec:
     #   # mount path of the PVC
     #   mountPath: /some/path
     
-    storageVolumes:
-    - name: kvdata
-      storageSize: "400Gi"
-      mountPath: "/var/lib/docker/ssd"
+    #storageVolumes:
+    #- name: kvdata
+    #  storageSize: "400Gi"
+    #  mountPath: "/var/lib/docker/ssd"
 
     
 
