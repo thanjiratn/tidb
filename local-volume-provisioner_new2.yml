@@ -4,6 +4,8 @@ metadata:
   name: "ssd-storage"
 provisioner: "kubernetes.io/no-provisioner"
 volumeBindingMode: "WaitForFirstConsumer"
+nodeSelector:
+  nodepool: tikv
 ---
 apiVersion: v1
 kind: ConfigMap
