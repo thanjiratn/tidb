@@ -1,0 +1,20 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv-ssd-storage-0
+spec:
+  storageClassName: ssd-storage
+  capacity:
+    storage: 400Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/docker/ssd"
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - nodepool: tikv
+          operator: In
+          values:
+          - ssd
