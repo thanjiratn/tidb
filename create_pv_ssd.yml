@@ -1,0 +1,14 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: ssd-storage-0
+spec:
+  storageClassName: ssd-storage
+  capacity:
+    storage: 400Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/docker"
+  nodeSelector:
+    nodepool: tikv
