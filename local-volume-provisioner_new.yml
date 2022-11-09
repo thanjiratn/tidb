@@ -4,6 +4,8 @@ metadata:
   name: "monitoring-storage"
 provisioner: "kubernetes.io/no-provisioner"
 volumeBindingMode: "WaitForFirstConsumer"
+nodeSelector:
+  nodepool: tidb
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -11,6 +13,8 @@ metadata:
   name: "ssd-storage"
 provisioner: "kubernetes.io/no-provisioner"
 volumeBindingMode: "WaitForFirstConsumer"
+nodeSelector:
+  nodepool: tikv
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -18,6 +22,8 @@ metadata:
   name: "shared-ssd-storage"
 provisioner: "kubernetes.io/no-provisioner"
 volumeBindingMode: "WaitForFirstConsumer"
+nodeSelector:
+  nodepool: tipd
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -25,6 +31,8 @@ metadata:
   name: "backup-storage"
 provisioner: "kubernetes.io/no-provisioner"
 volumeBindingMode: "WaitForFirstConsumer"
+nodeSelector:
+  nodepool: tidb
 ---
 apiVersion: v1
 kind: ConfigMap
