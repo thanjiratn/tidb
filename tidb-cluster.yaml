@@ -520,7 +520,7 @@ spec:
     #   imagePullPolicy: IfNotPresent
 
     ## The storageClassName of the persistent volume for TiDB data storage.
-     storageClassName: "backup-storage"
+    storageClassName: "backup-storage"
 
     ## defines additional volumes for which PVCs will be created by StatefulSet controller
     # storageVolumes:
