@@ -223,7 +223,7 @@ spec:
     # priorityClassName: system-cluster-critical
     # schedulerName: default-scheduler
     nodeSelector:
-        nodepool: tipd
+       nodepool: tipd
     # annotations:
     #   node.kubernetes.io/instance-type: some-vm-type
     # tolerations:
