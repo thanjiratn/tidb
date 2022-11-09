@@ -749,7 +749,7 @@ spec:
     #   mountPath: /some/path
     
     storageVolumes:
-    - name: data
+    - name: kvdata
       storageSize: "400Gi"
       mountPath: "/var/lib/docker/ssd"
 
