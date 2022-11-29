@@ -608,7 +608,7 @@ spec:
     ## describes the compute resource requirements.
     ## Ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     requests:
-      cpu: 7000m
+      cpu: 6000m
     #   memory: 1Gi
       storage: 500Gi
     # limits:
