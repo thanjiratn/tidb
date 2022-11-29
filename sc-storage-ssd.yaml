@@ -8,3 +8,5 @@ parameters:
   server: 10.57.48.86
   path: /
   readOnly: "false"
+allowVolumeExpansion: true
+
