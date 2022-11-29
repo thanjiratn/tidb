@@ -1,7 +1,7 @@
 apiVersion: pingcap.com/v1alpha1
 kind: TidbCluster
 metadata:
-  name: rnp-tidb
+  name: rnplus-tidb
   namespace: sit-tidb
 
 spec:
