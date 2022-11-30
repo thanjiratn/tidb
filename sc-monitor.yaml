@@ -4,6 +4,3 @@ metadata:
   name: "ssd-monitor-storage"
 provisioner: "kubernetes.io/no-provisioner"
 volumeBindingMode: "WaitForFirstConsumer"
-spec:
-  nodeSelector:
-    nodepool: monitor
