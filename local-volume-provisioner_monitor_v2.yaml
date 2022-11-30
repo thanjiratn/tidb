@@ -17,8 +17,8 @@ data:
     - kubernetes.io/hostname
   storageClassMap: |
     ssd-monitor-storage:
-      hostDir: /var/lib/docker
-      mountDir: /var/lib/docker
+      hostDir: /var/lib/docker/tidbmonitor
+      mountDir: /var/lib/docker/tidbmonitor
 
 ---
 apiVersion: apps/v1
@@ -68,7 +68,7 @@ spec:
             # mounting /dev in DinD environment would fail
             # - mountPath: /dev
             #   name: provisioner-dev
-            - mountPath: /var/lib/docker
+            - mountPath: /var/lib/docker/tidbmonitor
               name: local-disks
               mountPropagation: "HostToContainer"
       volumes:
@@ -80,7 +80,7 @@ spec:
         #     path: /dev
         - name: local-disks
           hostPath:
-            path: /var/lib/docker
+            path: /var/lib/docker/tidbmonitor
 
 ---
 apiVersion: v1
