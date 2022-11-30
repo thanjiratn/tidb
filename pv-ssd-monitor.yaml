@@ -1,0 +1,12 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv-ssd-monitor-storage-0
+spec:
+  storageClassName: ssd-monitor-storage
+  capacity:
+    storage: 50Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/docker"
