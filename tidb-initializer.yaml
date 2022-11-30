@@ -1,7 +1,7 @@
 apiVersion: pingcap.com/v1alpha1
 kind: TidbInitializer
 metadata:
-  name: TidbInit
+  name: tidbinit
   namespace: sit-tidb
 spec:
   image: tnir/mysqlclient
