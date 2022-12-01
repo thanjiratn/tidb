@@ -14,5 +14,4 @@ spec:
     version: v6.1.0
     storageClassName: "csi-disk-sit-rnp-ngmonitor"
     baseImage: pingcap/ng-monitoring
-  nodeSelector:
-    nodepool: monitor
+
