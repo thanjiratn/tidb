@@ -293,14 +293,14 @@ spec:
       type: NodePort
 
     ## If `usernameSecret` is not set, `username` will be used. You should create a secret named `basic-grafana` if use usernameSecret.
-    usernameSecret:
-      name: basic-grafana
-      key: username
+    #usernameSecret:
+      #name: basic-grafana
+      #key: username
 
     ## If `passwordSecret` is not set, `password` will be used. You should create a secret named `basic-grafana` if use passwordSecret.
-    passwordSecret:
-      name: basic-grafana
-      key: password
+    #passwordSecret:
+      #name: basic-grafana
+      #key: password
 
     ## Grafana login username.
     ## Deprecated in v1.3.0 for security concerns, planned for removal in v1.4.0. Use `usernameSecret` instead.
