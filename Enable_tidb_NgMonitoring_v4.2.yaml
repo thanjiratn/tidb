@@ -12,7 +12,7 @@ spec:
     requests:
       storage: 10Gi
     version: v6.1.0
-    storageClassName: "sc-ssd-storage"
+    storageClassName: "csi-disk-sit-rnp-ngmonitor"
     baseImage: pingcap/ng-monitoring
   nodeSelector:
     nodepool: monitor
