@@ -105,8 +105,8 @@ spec:
 
     ## NodeSelector of ng monitoring pods
     ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
-    # nodeSelector:
-    #   node-role.kubernetes.io/ngm: true
+    nodeSelector:
+       nodepool: monitor
 
     ## Tolerations are applied to ng monitoring pods, allowing (but do not require) pods to be scheduled onto nodes with matching taints.
     ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
@@ -143,7 +143,7 @@ spec:
     additionalVolumeMounts:
     # # this must match `name` in `additionalVolumes`
      - name: nfs
-       mountPath: /
+       mountPath: /var/lib/docker/ngmonitor
 
     ## defines additional volumes for which PVCs will be created by StatefulSet controller
     # storageVolumes:
