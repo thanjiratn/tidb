@@ -132,7 +132,7 @@ spec:
     #   image: ubuntu
 
     ## custom additional volumes in ng monitoring pods
-    # additionalVolumes:
+    additionalVolumes:
     # # specify volume types that are supported by Kubernetes, Ref: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#types-of-persistent-volumes
      - name: nfs
        nfs:
