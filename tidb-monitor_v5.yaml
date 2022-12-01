@@ -43,7 +43,7 @@ spec:
   storageClassName: "ssd-monitor-storage"
 
   ## Storage determines the reclaim storage size
-  storage: 50G
+  storage: 30G
 
   ## NodeSelector of TidbMonitor pod.
   ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
