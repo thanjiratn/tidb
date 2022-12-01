@@ -1,0 +1,12 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv-ssd-ngmonitor-storage-0
+spec:
+  storageClassName: ssd-ngmonitor-storage
+  capacity:
+    storage: 10Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/docker/ngmonitor"
