@@ -5,7 +5,7 @@ metadata:
   namespace: sit-tidb
 spec:
   storageClassName: csi-sfsturbo
-  capavity:
+  capacity:
 	storage: 10Gi
   accessModes:
 	- ReadWriteMany
