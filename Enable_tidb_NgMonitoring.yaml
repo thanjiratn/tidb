@@ -1,0 +1,14 @@
+apiVersion: pingcap.com/v1alpha1
+kind: TidbNGMonitoring
+metadata:
+  name: ngmonitor
+spec:
+  clusters:
+  - name: rnp-tidb
+    namespace: sit-tidb
+  ngMonitoring:
+    requests:
+      storage: 10Gi
+    version: v6.1.0
+    storageClassName: ssd-monitor-storage
+    baseImage: pingcap/ng-monitoring
