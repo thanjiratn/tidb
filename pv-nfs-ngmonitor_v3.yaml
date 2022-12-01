@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: "pv-nfs-ngmonitor"
+  name: pv-nfs-ngmonitor
   namespace: sit-tidb
 spec:
-  storageClassName: csi-sfsturbo
+  storageClassName: "sc-ssd-storage"
   capacity:
 	storage: 10Gi
   accessModes:
