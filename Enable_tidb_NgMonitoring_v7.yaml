@@ -105,8 +105,8 @@ spec:
 
     ## NodeSelector of ng monitoring pods
     ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
-    nodeSelector:
-       nodepool: monitor
+    #nodeSelector:
+      # nodepool: monitor
 
     ## Tolerations are applied to ng monitoring pods, allowing (but do not require) pods to be scheduled onto nodes with matching taints.
     ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
