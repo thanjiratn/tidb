@@ -11,7 +11,7 @@ spec:
     requests:
       storage: 10Gi
     version: v6.1.0
-    storageClassName: ssd-monitor-storage
+    storageClassName: ssd-ngmonitor-storage
     baseImage: pingcap/ng-monitoring
   nodeSelector:
     nodepool: monitor
