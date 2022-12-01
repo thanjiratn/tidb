@@ -7,11 +7,12 @@ spec:
   clusters:
   - name: rnp-tidb
     namespace: sit-tidb
+  pvReclaimPolicy: Retain
   ngMonitoring:
     requests:
       storage: 10Gi
     version: v6.1.0
-    storageClassName: ssd-ngmonitor-storage
+    storageClassName: "ssd-ngmonitor-storage"
     baseImage: pingcap/ng-monitoring
   nodeSelector:
     nodepool: monitor
