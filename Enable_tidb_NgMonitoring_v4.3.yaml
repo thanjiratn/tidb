@@ -1,7 +1,7 @@
 apiVersion: pingcap.com/v1alpha1
 kind: TidbNGMonitoring
 metadata:
-  name: ngmonitor
+  name: ngmonitoring
   namespace: sit-tidb
 spec:
   clusters:
@@ -14,4 +14,6 @@ spec:
     version: v6.1.0
     storageClassName: "csi-disk-sit-rnp-ngmonitor"
     baseImage: pingcap/ng-monitoring
+    nodeSelector:
+      nodepool: monitor
 
