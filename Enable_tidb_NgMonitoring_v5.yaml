@@ -140,10 +140,10 @@ spec:
          path: /
 
     ## custom additional volume mounts in ng monitoring pods
-    # additionalVolumeMounts:
+    additionalVolumeMounts:
     # # this must match `name` in `additionalVolumes`
-    # - name: nfs
-    #   mountPath: /nfs
+     - name: nfs
+       mountPath: /
 
     ## defines additional volumes for which PVCs will be created by StatefulSet controller
     # storageVolumes:
