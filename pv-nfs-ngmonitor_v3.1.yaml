@@ -6,9 +6,9 @@ metadata:
 spec:
   storageClassName: "sc-ssd-storage"
   capacity:
-	storage: 10Gi
+    storage: 10Gi
   accessModes:
-	- ReadWriteMany
+    - ReadWriteMany
   nfs:
-	path: /
-	server: 10.57.48.86
+    path: /
+    server: 10.57.48.86
